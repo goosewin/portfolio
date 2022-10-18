@@ -73,7 +73,7 @@ export default function AboutMe() {
                 Job Opportunities
               </h1>
               <p className="text-lg text-gray-500 mt-4 dark:text-gray-300">
-                I'm flexible and would love to be considered for any open position
+                I&apos;m flexible and would love to be considered for any open position
               </p>
             </div>
           </div>

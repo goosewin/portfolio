@@ -62,6 +62,7 @@ export default function Hero() {
               I&apos;m flexible and would love to be considered for any open position
             </p>
           </div>
+          <div className="sm mb-48" />
         </div>
       </div>
       {/* Image container */}

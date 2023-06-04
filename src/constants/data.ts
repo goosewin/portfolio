@@ -5,13 +5,7 @@ const userData = {
   avatarUrl: "/avatar.jpg",
   email: "daniel@webline.app",
   location: "Sacramento, CA",
-  projects: [
-    // {
-    //   title: "Illawarra",
-    //   link: "https://illawarratherapies.com.au",
-    //   imgUrl: "/illawarra.jpg",
-    // },
-  ],
+  projects: [],
   about: {
     title:
       "Full stack developer with 7+ years of experience building scalable web applications and internal tools that drastically improve efficiency.",
@@ -19,37 +13,37 @@ const userData = {
       "I have worked on a large range of projects and developed strong skills in software engineering by delivering applications for native platforms and web. In the past decade I worked with entrepreneurs and small to medium sized businesses.",
       "I am Full-Stack Developer — my front-end and back-end expertise come together, essentially covering the full stack of technology for a project. Well versed with Front-End Tools like HTML, CSS, JavaScript; Back-End technologies and infrastructure: NodeJS, Express, NestJS, Fastify.",
     ],
-    currentProject: "Tailwind Master Kit",
-    currentProjectUrl: "https://tailwindmasterkit.com",
+    currentProject: "",
+    currentProjectUrl: "",
   },
   experience: [
+    {
+      title: "Software Engineer",
+      company: "Deaglo",
+      year: "2023",
+      companyLink: "https://deaglo.com",
+      desc: "Driving payment and FX-related software solutions using .NET, AWS, TypeScript, and React. Utilizing Agile methodologies to deliver high-quality software products on time.",
+    },
+    {
+      title: "Founder",
+      company: "Webline",
+      year: "2020",
+      companyLink: "https://webline.app",
+      desc: "Founder and sole proprietor of Webline, specializing in providing top-tier custom web development services. Experienced in a wide range of web technologies including TypeScript, React, .NET, Java, Go, and more. Committed to delivering solutions that are efficient, user-friendly, and scalable.",
+    },
     {
       title: "Supervisory Controls and Data Acquisition Engineer",
       company: "Tesco Controls",
       year: "2021",
       companyLink: "https://tescocontrols.com",
-      desc: "Functioned as the technical lead on projects of medium to large scale. Provided mentoring and training of junior staff. Designed complex systems for operating manufacturing processes and water/wastewater facilities, collecting data in real-time and alarming based on certain conditions",
+      desc: "As a Supervisory Controls and Data Acquisition Engineer at Tesco Controls, I excelled in integration custom solutions for automated systems. Ensured high-quality performance and stability of control systems.",
     },
     {
       title: "Lead Software Engineer",
       company: "Hivehub",
       year: "2020",
       companyLink: "https://hivehub.app",
-      desc: "Worked within an agile team and helped prioritize and scope feature requests to ensure that the biggest impact features were worked on first. Responsible for building UI for all company’s products, working in close collaboration with the design team. Worked on building new React components for web and native applications. Worked on building OTT and SaaS applications",
-    },
-    {
-      title: "Founder & Developer",
-      company: "DSTOLBOV.ART",
-      year: "2014",
-      companyLink: "#",
-      desc: "Founded a sole proprietorship that focused on developing websites for small to medium size businesses",
-    },
-    {
-      title: "Freelancing Full Stack Software Engineer",
-      company: "Upwork",
-      year: "2014",
-      companyLink: "https://upwork.com",
-      desc: "Worked with passionate business owners and entrepreneurs, and helped them to get their message out into the world",
+      desc: "Held a leadership role as Lead Web Developer at Hivehub, while being responsible for designing and deploying a variety of web applications. Leveraged technologies including TypeScript, React, React Native, and Node.js to create responsive and intuitive web solutions.",
     },
   ],
   socialLinks: {

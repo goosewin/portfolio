@@ -59,7 +59,7 @@ export default function Hero() {
           </div>
           <div className="mt-8">
             <p className="text-lg text-gray-500 mt-4 dark:text-gray-300">
-              I&apos;m flexible and would love to be considered for any open position
+              I&apos;m open to collaborating on interesting projects
             </p>
           </div>
           <div className="sm mb-48" />

@@ -1,33 +1,33 @@
 const userData = {
   githubUsername: "goosewin",
   name: "Daniel Stolbov",
-  designation: "Software Engineer",
+  designation: "Technology Leader",
   avatarUrl: "/avatar.jpg",
   email: "daniel@webline.app",
   location: "California",
   projects: [],
   about: {
     title:
-      "Full-stack software engineer with 7+ years of experience building scalable web applications.",
+      "Entrepreneur & Technology Leader with 7+ years of experience building digital products.",
     description: [
-      "A dedicated Full-Stack Software Engineer with extensive experience in various aspects of software development.",
-      "Proven proficiency in a wide range of programming languages and frameworks, including .NET, TypeScript, React.js, AWS, GCP and Agile methodologies. Committed to delivering high-quality, scalable, and efficient software solutions.",
+      "With over a decade of experience in software engineering, I have successfully transitioned from a hands-on full-stack developer to leading and managing dynamic teams of software engineers. My expertise spans from crafting applications for SMBs to now driving fintech solutions at a fast-paced startup. My technical foundation in both front-end and back-end technologies ensures that I guide my teams with a comprehensive understanding of the software lifecycle.",
+      "Proven proficiency in a wide range of programming languages and frameworks, including .NET, TypeScript, and React. Extensive experience with major cloud providers like AWS, GCP, and Azure. I am committed to delivering high-quality, scalable, and efficient software solutions.",
     ],
     currentProject: "",
     currentProjectUrl: "",
   },
   experience: [
     {
-      title: "Software Engineer",
+      title: "Software Development Manager",
       company: "Deaglo",
       year: "2023",
       companyLink: "https://deaglo.com",
-      desc: "Driving payment and FX-related software solutions using .NET, AWS, TypeScript, and React. Utilizing Agile methodologies to deliver high-quality software products on time.",
+      desc: "Overseeing the development and enhancement of FX Risk Management solutions. Responsible for system architecture, team leadership, cross-functional collaboration, and driving technical innovation to align with strategic goals. Focused on fostering a growth-oriented team culture and delivering high-impact products.",
     },
     {
       title: "Founder",
       company: "Webline",
-      year: "2020",
+      year: "2021",
       companyLink: "https://webline.app",
       desc: "Founder and sole proprietor of Webline, specializing in providing top-tier custom web development services. Experienced in a wide range of web technologies including TypeScript, React, .NET, Java, Go, and more. Committed to delivering solutions that are efficient, user-friendly, and scalable.",
     },

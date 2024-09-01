@@ -1,3 +1,4 @@
+import Image from "next/image";
 import userData from "../constants/data";
 
 export default function Hero() {
@@ -6,11 +7,11 @@ export default function Hero() {
       {/* Text container */}
 
       <div className="w-full md:w-1/2 mx-auto text-center md:text-left lg:p-20">
-        <h2 className="text-4xl md:text-8xl font-bold text-gray-700 dark:text-gray-200 my-2">
-          Full-Stack
+        <h2 className="text-4xl md:text-7xl font-bold text-gray-700 dark:text-gray-200 my-2">
+          Entrepreneur &
         </h2>
-        <h2 className="text-4xl md:text-8xl font-bold text-gray-700 dark:text-gray-200 my-2">
-          Software Engineer
+        <h2 className="text-4xl md:text-7xl font-bold text-gray-700 dark:text-gray-200 my-2">
+          Technology Leader
         </h2>
         <div className="inline-flex flex-col">
           <div className="mt-4 ml-4">
@@ -66,9 +67,9 @@ export default function Hero() {
         </div>
       </div>
       {/* Image container */}
-      <div className="hidden lg:block relative w-full md:w-1/2 -mr-40 mt-20">
+      <div className="hidden lg:block relative w-full md:w-1/2 -mr-40 mt-10">
         <div className="w-3/4">
-          <img src={userData.avatarUrl} alt="avatar" className="shadow" />
+          <Image width={600} height={600} src={userData.avatarUrl} alt="avatar" className="shadow" />
           <div className="flex flex-row justify-between mt-4">
             <div className="flex flex-row space-x-4">
               <svg

@@ -1,15 +1,16 @@
 import ContainerBlock from "../components/ContainerBlock";
 import Hero from "../components/Hero";
-import RecentCode from "../components/RecentCode";
+import RecentCode, { Repository } from "../components/RecentCode";
 import userData from "../constants/data";
 import getLatestRepos from "../lib/getLatestRepos";
 
-export default function Home({ repositories }: any) {
+interface Props {
+  repositories: Repository[];
+}
+
+export default function Home({ repositories }: Props) {
   return (
-    <ContainerBlock
-      title="Daniel Stolbov - Software Engineer"
-      description={userData.about.title}
-    >
+    <ContainerBlock>
       <Hero />
       {/* <FavoriteProjects /> */}
       <RecentCode repositories={repositories} />

@@ -1,12 +1,12 @@
 import axios from "axios";
 
-const getLatestRepos = async (data: any, token: string) => {
-  // console.log("data", data);
+interface Data {
+  githubUsername: string;
+}
+
+const getLatestRepos = async (data: Data, token: string) => {
   try {
     const username = data.githubUsername;
-
-    // let token = `token ${process.env.GITHUB_AUTH_TOKEN}`;
-    // console.log("TOKEN", token);
 
     if (token) {
       const res = await axios.get(
@@ -19,7 +19,7 @@ const getLatestRepos = async (data: any, token: string) => {
       );
       const repos = res.data.items;
       const latestSixRepos = repos.splice(0, 6);
-      // console.log("LATEST 6 repos", latestSixRepos);
+
       return latestSixRepos;
     } else {
       const res = await axios.get(

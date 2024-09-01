@@ -4,15 +4,14 @@ import userData from "../constants/data";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
 
-export default function ContainerBlock({ children, ...customMeta }: any) {
+export default function ContainerBlock({ children }: React.PropsWithChildren) {
   const router = useRouter();
 
   const meta = {
-    title: "Daniel Stolbov - Software Engineer",
+    title: "Daniel Stolbov - Entrepreneur & Technology Leader",
     description: userData.about.title,
-    image: "/avatar.png",
+    image: "/avatar.jpg",
     type: "website",
-    ...customMeta,
   };
   return (
     <div>
@@ -38,9 +37,6 @@ export default function ContainerBlock({ children, ...customMeta }: any) {
         <meta name="twitter:title" content={meta.title} />
         <meta name="twitter:description" content={meta.description} />
         <meta name="twitter:image" content={meta.image} />
-        {meta.date && (
-          <meta property="article:published_time" content={meta.date} />
-        )}
       </Head>
       <main className="dark:bg-gray-800 w-full">
         <Navbar />

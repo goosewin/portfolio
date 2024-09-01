@@ -1,12 +1,18 @@
 import { useEffect, useState } from "react";
 import userData from "../constants/data";
 
-export default function RecentCode({ repositories }: any) {
-  const [repos, setRepos] = useState([]);
+interface Props {
+  repositories: Repository[];
+}
+
+export default function RecentCode({ repositories }: Props) {
+  const [repos, setRepos] = useState<Repository[]>([]);
 
   useEffect(() => {
     setRepos(repositories);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
   return (
     <section className="bg-[#F1F1F1] -mt-40 dark:bg-gray-900 pb-40">
       <div className="max-w-6xl mx-auto">
@@ -39,18 +45,25 @@ export default function RecentCode({ repositories }: any) {
         </div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto px-10 lg:-mt-10 gap-y-20">
-        {/* Single github Repo */}
-
-        {repos &&
-          repos.map((latestRepo, idx) => (
-            <GithubRepoCard latestRepo={latestRepo} key="idx" />
-          ))}
+        {repos?.map((latestRepo, idx) => (
+          <GithubRepoCard latestRepo={latestRepo} key={idx} />
+        ))}
       </div>
     </section>
   );
 }
 
-const GithubRepoCard = ({ latestRepo }: any) => {
+export interface Repository {
+  name: string;
+  description: string;
+  clone_url: string;
+};
+
+interface GithubRepoCardProps {
+  latestRepo: Repository;
+}
+
+const GithubRepoCard = ({ latestRepo }: GithubRepoCardProps) => {
   return (
     <div className="github-repo">
       <h1 className="font-semibold text-xl dark:text-gray-200 text-gray-700">

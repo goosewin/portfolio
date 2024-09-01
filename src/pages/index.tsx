@@ -12,7 +12,6 @@ export default function Home({ repositories }: Props) {
   return (
     <ContainerBlock>
       <Hero />
-      {/* <FavoriteProjects /> */}
       <RecentCode repositories={repositories} />
     </ContainerBlock>
   );
